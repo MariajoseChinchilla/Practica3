@@ -1,0 +1,27 @@
+<html>
+  <body>
+  <h2 style="color: blue">
+    Edición de datos
+  </h2>
+  <p> El correo de tu cuenta no puede editarse. </p>
+  <p> Tu correo registrado es {{email}}.</p>
+  <form action="/action_page.php">
+      <p> Tu nombre de usuario actual es: {{nombre}}</p>
+  <label for="username">Nuevo nombre de usuario</label><br>
+  <input type="text" id="username" name="username" value=''><br>
+      <input type="radio" id="no_cambio_usuario" name="gender" value={{nombre}}>
+      <label for="no">No cambiar mi nombre de usuario</label><br>
+      <p> Tu CUI actual es {{cui}}.</p>
+  <label for="cui">Nuevo CUI</label><br>
+  <input type="text" id ="cui" name="cui" value=''><br><br>
+      <input type="radio" id="no_cambio_cui" name="gender" value={{cui}}>
+      <label for="no">No cambiar mi CUI</label><br>
+      <input type="radio" id="no" name='matematico' value="1">
+  <label for='profesion'>Matemático (a)</label><br>
+  <input type="radio" id='profesion' name="fisico" value="2">
+  <label for="profesion">Físico (a)</label><br>
+  <input type="submit" value="Submit">
+</form>
+  <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"><a  href = '/profile/<str:nom>'>Regresar a perfil</a></button></h6>
+  </body>
+</html>
